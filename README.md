@@ -5,6 +5,10 @@ O task-cli é um projeto de linha de comando feito para ajudar na organização 
 
 URL do Projeto: https://roadmap.sh/projects/task-tracker
 
+## Demonstração
+
+![Demonstração com alguns comandos](./task-cli.gif)
+
 ## Instalação
 
 Para fazer o deploy desse projeto cópie e cole os seguintes comandos em seu terminal.
@@ -26,16 +30,6 @@ Para fazer o deploy desse projeto cópie e cole os seguintes comandos em seu ter
 ```bash
     node index.js <comando> [argumentos]
 ```
-
-
-
-
-
-
-
-## Demonstração
-
-![Demonstração com alguns comandos](./task-cli.gif)
 
 
 ## Comandos disponíveis
