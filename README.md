@@ -3,8 +3,7 @@
 
 O task-cli é um projeto de linha de comando feito para ajudar na organização e controle de suas tarefas diárias.
 
-
-
+URL do Projeto: https://roadmap.sh/projects/task-tracker
 
 ## Instalação
 
