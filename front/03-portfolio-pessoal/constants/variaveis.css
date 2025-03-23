@@ -1,0 +1,21 @@
+:root {
+    --azul-claro: #93b7beff;
+    --fundo-secundario: #f1fffaff;
+    --fundo: #d5c7bcff;
+    --elementos: #5d3c3c;
+    --destaque: #454545ff; 
+    --cor-texto: black;
+    --cor-borda: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --azul-claro: #2c3e50; 
+        --fundo-secundario: #2c3e50; 
+        --fundo: #34495e; 
+        --elementos: #587789; 
+        --destaque: #7f8c8d; 
+        --cor-texto: #ecf0f1; 
+        --cor-borda: #95a5a6; 
+    }
+}

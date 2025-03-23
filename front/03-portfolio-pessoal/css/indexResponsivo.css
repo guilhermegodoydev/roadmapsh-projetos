@@ -1,0 +1,74 @@
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        top: inherit;
+        width: 100%;
+        position: absolute;
+        padding: 0;
+    }
+    
+    .container-logo {
+        flex-direction: column;
+    }
+    
+    .container-logo > p {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .logo {
+        max-width: 50px;
+    }
+    
+    .banner {
+        text-align: center;
+    }
+    
+    .sessao-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sessao-info > div {
+        border-width: 1px;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+    
+    .sessao-info div h1 {
+        margin-bottom: 10px;
+    }
+    
+    .sessao-info > div ul {
+        background-color: gray;    
+    }
+    
+    .sessao-info > div ul li:first-child {
+        border-top: solid 1px black;
+    }
+    
+    .sessao-info > div ul li {
+        border-bottom: solid 1px black;
+        padding: 5px 0px;
+    }
+    
+    .sessao-depoimentos {
+        justify-content: normal;
+    }
+    
+    .sessao-depoimentos > div > div {
+        margin-bottom: 5%;
+        border-radius: 10px;
+    }
+    
+    .sessao-depoimentos > div {
+        flex-wrap: wrap;
+    }
+    
+    
+    section:not(.banner) { 
+        height: auto;
+    }
+}

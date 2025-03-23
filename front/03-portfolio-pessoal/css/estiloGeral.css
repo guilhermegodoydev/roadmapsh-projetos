@@ -1,0 +1,180 @@
+@import url("../constants/variaveis.css");
+
+* {
+    color: var(--cor-texto);
+    font-family: "Winky Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fundo);
+}
+
+section {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--elementos);
+    padding: 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*=================== Header ===================*/
+
+header {
+    position: fixed;
+    width: 95vw;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    z-index: 1;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+    background-color: var(--elementos);
+}
+
+header ul {
+    display: flex;
+    padding-inline: 0;
+    list-style: none;
+}
+
+header ul li::after {
+    margin: 0 5px;
+    content: "|";
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+header ul li:last-child::after {
+    content: "";
+}
+
+/*=================== Logo ===================*/
+
+.logo {
+    max-width: 20px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo a {
+    margin-right: 10px;
+}
+
+/*=================== Banner ===================*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.banner h2 {
+    font-size: 1.3em;
+    color: var(--destaque);
+    margin: 0;
+}
+
+/*=================== Sessão Info (depois do banner) ===================*/
+
+.sessao-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "projetos expTrabalho educacao"
+        "projetos ajudas educacao";
+    overflow: hidden;
+}
+
+.sessao-info div {
+    border: solid 2px var(--cor-borda);
+    padding: 10px;
+    background-color: var(--elementos);
+}
+
+.sessao-info div h1 {
+    margin-top: 0;
+}
+
+.sessao-info div ul {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: hidden auto;
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline: 0;
+}
+
+/*=================== Caixas da Sessão Info ===================*/
+
+.container-projetos {
+    grid-area: projetos;
+}
+
+.container-trabalhos {
+    grid-area: expTrabalho;
+}
+
+.container-trabalhos-livres {
+    grid-area: ajudas;
+}
+
+.container-educacao {
+    grid-area: educacao;
+}
+
+/*=================== Sessão Depoimentos ===================*/
+
+.sessao-depoimentos {
+    padding: 0 1.5vw;
+}
+
+.sessao-depoimentos > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.sessao-depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=================== Cards da Sessão Depoimentos ===================*/
+
+.card-opiniao {
+    border: solid 2px var(--cor-borda);
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--fundo-secundario);
+}
+
+header, .card-opiniao {
+    box-shadow: 0px 5px 15px black;
+}
