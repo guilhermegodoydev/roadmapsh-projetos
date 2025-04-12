@@ -1,0 +1,117 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 10px 10px 0 10px;
+}
+
+h2 {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 48vh;
+    grid-template-areas: 
+        "testimonial1 testimonial2"
+        "testimonial3 testimonial3";
+    row-gap: 30px;
+    column-gap: 50px;
+}
+
+.testimonial-type1 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-type1 > div:nth-of-type(1) {
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 2em;
+    height: -webkit-fill-available;
+}
+
+.testimonial-type1 > div:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    border-top: 20px solid #1e1e1e;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+.testimonial-type1 > div:first-child p {
+    margin: 0;
+}
+
+.testimonial-container-user h1 {
+    margin: 0;
+}
+
+.testimonial-container-user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #000;
+}
+
+.testimonial-type1 > div:nth-of-type(2) h1 {
+    margin: 0;
+}
+
+.testimonial-type1 > div:nth-of-type(2) h2 {
+    margin-bottom: 0;
+}
+
+.testimonial-author-image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.testimonial-type2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.testimonial-type3 {
+    align-items: stretch;
+    grid-area: testimonial3;
+}
+
+.testimonial-type3 > div{
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.testimonial-type3 > div h2 {
+    color: gray;
+}
+
+.testimonial-type3 > img {
+    border-radius: 20px;
+    width: 38vw;
+}
