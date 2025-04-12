@@ -1,0 +1,15 @@
+:root {
+    --cor-texto: #000;
+    --cor-fundo: #0129ff38;
+    --cor-principal: #006bca;
+    --cor-segundaria: #1150B3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-texto: #fff;
+        --cor-fundo: #303030 ;
+        --cor-principal: #3E11B3;
+        --cor-segundaria: #2a2637;
+    }
+}

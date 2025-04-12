@@ -1,0 +1,66 @@
+@import url("../constants/variaveis.css");
+
+* {
+    color: var(--cor-texto);
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: var(--cor-fundo);
+}
+
+.changelog {
+    display: flex;
+    gap: 2.5%;
+    margin: 0 1.5%;
+    margin-bottom: 8vh;
+}
+
+.version {
+    background-color: var(--cor-principal);
+    min-width: 200px;
+    max-width: 200px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 5px 5px black;
+}
+
+.content {
+    background-color: var(--cor-segundaria);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 5px 5px black;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.version p {
+    margin: 0;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.data {
+    font-size: 12px;
+    color: gray;
+}
+
+/*===========================Mobile===========================*/
+
+@media (max-width: 1000px) {
+    .changelog {
+        flex-direction: column;
+    }
+
+    .version {
+        max-width: inherit;
+        margin-bottom: 1.4em;
+    }
+}
